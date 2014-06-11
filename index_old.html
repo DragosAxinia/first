@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+	<title>First</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/dragosfirst.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="home">
+	<div data-role="header">
+		<h1>Home</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<a href="#transitionExample" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Click the button</a>
+		<div class="clearfloat"></div>
+		<div data-role="popup" id="transitionExample" class="ui-content" data-theme="a">
+			<p>The first mobile application</p>
+		</div>
+		<!-- <p>The first mobile application</p> -->
+		<a href="#two" data-transition="slide" class="ui-btn ui-btn-inline">Go to Page Two</a>
+		<a href="#three" data-transition="slide" data-role="button" data-inline="true">Go to page three</a>
+		<!-- <p>To<a href="#two"> page two</a></p> -->
+	</div>
+
+	<div data-role="footer">
+		<h4>Bottom</h4>
+	</div>
+</div>
+
+<div data-role="page" id="two">
+	<div data-role="header">
+		<h1>Two</h1>
+	</div>
+	<div role="main" class="ui-content">
+		<p>The second page, the test page</p>
+		<!-- <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p> -->
+		<a href="#home" data-transition="slide" data-role="button" data-inline="true">Back to page one</a>
+		<!-- <p><a href="#home">Back to page one</a></p> -->
+	</div>
+	<div data-role="footer">
+		<h4>Bottom</h4>
+	</div>
+</div>
+<div data-url="demo-page" data-role="page" id="three">
+    <div data-role="header" data-theme="b">
+        <h1>Canon left or right</h1>
+        <a href="#left-panel" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+        <a href="#right-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open right panel</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+		<a href="#home" data-transition="slide" data-role="button" data-inline="true">Back to page one</a>
+        <dl>
+            <dt>Swipe <span>verb</span></dt>
+            <dd><b>1.</b> to strike or move with a sweeping motion</dd>
+        </dl>
+        <a href="#demo-intro" data-rel="back" class="back-btn ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-back ui-btn-icon-right">Back to demo intro</a>
+    </div><!-- /content -->
+    <div data-role="panel" id="left-panel" data-theme="b">
+    	<h1>Canon EF-S 55-250mm f/4-5.6 IS STM Lens</h1>
+        <p>A versatile telephoto zoom lens that takes you closer to the action. Great for sport, nature and travel photography</p>
+        <p>Lightweight, compact design for maximum portability</p>
+        <p>A 3.5-stop Image Stabilizer guards against image blur from camera shake</p>
+        <!-- <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Close</a> -->
+    </div><!-- /panel -->
+    <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="b">
+    	<h1>Canon EF-S 10-18mm f/4.5-5.6 IS STM Lens</h1>
+        <p>Capture dramatic landscapes and architectural shots with this EF-S ultra-wide angle zoom</p>
+        <p>Smooth quiet focusing in movies with STM technology</p>
+        <p>Enjoy steady shots even in low light and shoot beautiful sharp movies handheld with 4-stop optical Image Stabilizer</p>
+        <!-- <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a> -->
+    </div><!-- /panel -->
+</div>
+</body>
+</html>
